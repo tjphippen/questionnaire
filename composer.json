@@ -1,10 +1,10 @@
 {
-    "name": "leapfinder/laravel-questionnaire",
-    "description": "A very simple questionnaire for a laravel 5.8+ website or application",
-    "homepage": "https://github.com/leapfinder/laravel-questionnaire",
+    "name": "tjphippen/questionnaire",
+    "description": "Weighted questionnaire for a laravel 5.8+ application",
+    "homepage": "https://github.com/tjphippen/questionnaire",
     "keywords":
     [
-        "leapfinder",
+        "tjphippen",
         "questionnaire",
         "survey",
         "questions",
@@ -13,8 +13,8 @@
     ],
     "authors": [
         {
-          "name": "Tyson List",
-          "homepage": "https://leapfinder.com",
+          "name": "TJ Phippen",
+          "homepage": "http://tjphippen.com",
           "role": "Developer"
         }
     ],
@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "LeapFinder\\Questionnaire\\": "src"
+            "Tjphippen\\Questionnaire\\": "src"
         },
         "files": [
             "src/Helpers.php"
@@ -40,7 +40,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "LeapFinder\\Questionnaire\\Test\\": "tests"
+            "Tjphippen\\Questionnaire\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -50,7 +50,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LeapFinder\\Questionnaire\\QuestionnaireServiceProvider"
+                "Tjphippen\\Questionnaire\\QuestionnaireServiceProvider"
             ]
         }
     },

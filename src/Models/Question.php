@@ -1,14 +1,14 @@
 <?php
 
-namespace LeapFinder\Questionnaire\Models;
+namespace Tjphippen\Questionnaire\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use LeapFinder\Questionnaire\Contracts\Answer as AnswerContract;
-use LeapFinder\Questionnaire\Contracts\Question as QuestionContract;
+use Tjphippen\Questionnaire\Contracts\Answer as AnswerContract;
+use Tjphippen\Questionnaire\Contracts\Question as QuestionContract;
 
 class Question extends Model implements QuestionContract
 {

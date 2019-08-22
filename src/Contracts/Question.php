@@ -1,6 +1,6 @@
 <?php
 
-namespace LeapFinder\Questionnaire\Contracts;
+namespace Tjphippen\Questionnaire\Contracts;
 
 use Illuminate\Database\Eloquent\Relations\HasMany;
 

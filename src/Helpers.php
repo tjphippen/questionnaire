@@ -1,6 +1,6 @@
 <?php
 
-namespace LeapFinder\Questionnaire;
+namespace Tjphippen\Questionnaire;
 
 /**
  * @param string $guard

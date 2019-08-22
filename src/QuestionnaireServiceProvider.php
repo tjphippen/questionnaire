@@ -1,10 +1,10 @@
 <?php
 
-namespace LeapFinder\Questionnaire;
+namespace Tjphippen\Questionnaire;
 
 use Illuminate\Support\ServiceProvider;
-use LeapFinder\Questionnaire\Contracts\Answer as AnswerContract;
-use LeapFinder\Questionnaire\Contracts\Question as QuestionContract;
+use Tjphippen\Questionnaire\Contracts\Answer as AnswerContract;
+use Tjphippen\Questionnaire\Contracts\Question as QuestionContract;
 
 class QuestionnaireServiceProvider extends ServiceProvider
 {
