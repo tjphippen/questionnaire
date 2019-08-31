@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Tjphippen\Questionnaire\Contracts\Question as QuestionContract;
-use Tjphippen\Questionnaire\Contracts\Questionnaire as QuestionnaireContract;
+use Tjphippen\Questionnaire\Contracts\Questionnaires as QuestionnaireContract;
 
 class Questionnaire extends Model implements QuestionnaireContract
 {
