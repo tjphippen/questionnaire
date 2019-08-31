@@ -5,6 +5,7 @@ namespace Tjphippen\Questionnaire;
 use Illuminate\Support\ServiceProvider;
 use Tjphippen\Questionnaire\Contracts\Answer as AnswerContract;
 use Tjphippen\Questionnaire\Contracts\Question as QuestionContract;
+use Tjphippen\Questionnaire\Contracts\Questionnaire as QuestionnaireContract;
 
 class QuestionnaireServiceProvider extends ServiceProvider
 {
@@ -41,6 +42,7 @@ class QuestionnaireServiceProvider extends ServiceProvider
     {
         $config = $this->app->config['questionnaire.models'];
 
+        $this->app->bind(QuestionnaireContract::class, $config['questionnaire']);
         $this->app->bind(QuestionContract::class, $config['question']);
         $this->app->bind(AnswerContract::class, $config['answer']);
     }

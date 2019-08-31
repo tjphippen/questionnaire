@@ -12,4 +12,11 @@ interface Question
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function answers(): HasMany;
+
+    /**
+     * The questionnaire for which this question belongs to..
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function questionnaire(): BelongsTo;
 }

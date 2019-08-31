@@ -7,11 +7,9 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Tjphippen\Questionnaire\Contracts\Answer as AnswerContract;
-use Tjphippen\Questionnaire\Contracts\Question as QuestionContract;
 use Tjphippen\Questionnaire\Contracts\Questionnaire as QuestionnaireContract;
 
-class Question extends Model implements QuestionContract
+class Questionnaire extends Model implements QuestionnaireContract
 {
     use SoftDeletes;
 
@@ -22,18 +20,12 @@ class Question extends Model implements QuestionContract
     ];
 
     protected $fillable = [
-      'text',
-      'input_type',// text,radio,checkbox
+      'name',
       'options'
     ];
 
-    public function answers(): HasMany
+    public function questions(): HasMany
     {
-        return $this->hasMany(config('questionnaire.models.answer'));
-    }
-
-    public function questionnaire(): BelongsTo
-    {
-        return $this->belongsTo(config('questionnaire.models.questionnaire'));
+        return $this->hasMany(config('questionnaire.models.questions'));
     }
 }

@@ -12,6 +12,8 @@ return [
          * `Tjphippen\Questionnaire\Question` contract.
          */
 
+        'questionnaire' => Tjphippen\Questionnaire\Models\Questionnaire::class,
+
         'question' => Tjphippen\Questionnaire\Models\Question::class,
 
         /*
