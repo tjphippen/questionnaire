@@ -4,7 +4,7 @@ namespace Tjphippen\Questionnaire\Contracts;
 
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-interface Questionnaires
+interface Questionnaire
 {
     /**
      * Get all questions to this given questionnaire.

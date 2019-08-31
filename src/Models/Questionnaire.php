@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Tjphippen\Questionnaire\Contracts\Question as QuestionContract;
-use Tjphippen\Questionnaire\Contracts\Questionnaires as QuestionnaireContract;
+use Tjphippen\Questionnaire\Contracts\Questionnaire as QuestionnaireContract;
 
 class Questionnaire extends Model implements QuestionnaireContract
 {
@@ -19,7 +19,7 @@ class Questionnaire extends Model implements QuestionnaireContract
         'created_at', 'updated_at', 'deleted_at'
     ];
 
-    protected $fillable = ['name', 'options'];
+    public $fillable = ['name', 'options'];
 
     public function questions(): HasMany
     {
