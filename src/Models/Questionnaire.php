@@ -17,7 +17,7 @@ class Questionnaire extends Model implements QuestionnaireContract
     public $guarded = ['id'];
 
     protected $dates = [
-        'created_at', 'updated_at', 'deleted_at',
+        'created_at', 'updated_at', 'deleted_at'
     ];
 
     protected $fillable = ['name', 'options'];
